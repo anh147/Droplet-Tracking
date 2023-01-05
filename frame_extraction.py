@@ -19,7 +19,7 @@ def FrameCapture(path):
     # function extract frames
     success, image = vidObj.read()
     
-    cv2.imwrite("yolo//1000%d.jpg" % count, image)
+    cv2.imwrite("image_tracking//%d.jpg" % count, image)
     count += 1
 
 
@@ -27,4 +27,4 @@ def FrameCapture(path):
 if __name__ == '__main__':
 
   # Calling the function
-  FrameCapture("yolo.mp4")
+  FrameCapture("video_tracking/raw3_track.mp4")
